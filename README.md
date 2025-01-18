@@ -130,7 +130,8 @@ WHERE
 
 ### 6. Find Content Added in the Last 5 Years
 
-```sqlSELECT 
+```sql
+SELECT 
     *, STR_TO_DATE(date_added, '%M %d, %Y') AS formatted_date
 FROM
     netflix
